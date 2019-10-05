@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensibility", "Extensibility\Extensibility.csproj", "{EE8E7064-ED61-4DBA-97EB-52D6EAE95544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D49393C5-0EA8-43EA-9F4E-97AD7C1C6D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin1", "Plugin1\Plugin1.csproj", "{C4116047-6F75-493B-90DE-B072808607A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE8E7064-ED61-4DBA-97EB-52D6EAE95544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8E7064-ED61-4DBA-97EB-52D6EAE95544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8E7064-ED61-4DBA-97EB-52D6EAE95544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8E7064-ED61-4DBA-97EB-52D6EAE95544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49393C5-0EA8-43EA-9F4E-97AD7C1C6D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49393C5-0EA8-43EA-9F4E-97AD7C1C6D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49393C5-0EA8-43EA-9F4E-97AD7C1C6D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49393C5-0EA8-43EA-9F4E-97AD7C1C6D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4116047-6F75-493B-90DE-B072808607A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4116047-6F75-493B-90DE-B072808607A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4116047-6F75-493B-90DE-B072808607A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4116047-6F75-493B-90DE-B072808607A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
