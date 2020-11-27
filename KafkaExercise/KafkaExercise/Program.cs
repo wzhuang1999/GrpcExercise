@@ -8,6 +8,7 @@ namespace KafkaExercise
     {
         static void Main(string[] args)
         {
+            // Just run once or create with Kafka Tool
             //using (var adminClient = new AdminClientBuilder(new AdminClientConfig { BootstrapServers = "localhost:9092" }).Build())
             //{
             //    adminClient.CreateTopicsAsync(new[] { new TopicSpecification
