@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudKarafka", "CloudKarafka\CloudKarafka.csproj", "{02F902AE-F8AC-4C1D-8D90-E62420D37354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{91755C3F-3931-40EF-8C09-FF87AA9330FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{3DDFCF66-921E-4FB5-8341-AAD319DC69E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02F902AE-F8AC-4C1D-8D90-E62420D37354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F902AE-F8AC-4C1D-8D90-E62420D37354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F902AE-F8AC-4C1D-8D90-E62420D37354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F902AE-F8AC-4C1D-8D90-E62420D37354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91755C3F-3931-40EF-8C09-FF87AA9330FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91755C3F-3931-40EF-8C09-FF87AA9330FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91755C3F-3931-40EF-8C09-FF87AA9330FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91755C3F-3931-40EF-8C09-FF87AA9330FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDFCF66-921E-4FB5-8341-AAD319DC69E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDFCF66-921E-4FB5-8341-AAD319DC69E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDFCF66-921E-4FB5-8341-AAD319DC69E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDFCF66-921E-4FB5-8341-AAD319DC69E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {050EDDD9-D6EB-4C47-88C6-339A96B3DCF8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+{
+"cleanup.policy":"compact",
+"min.cleanable.dirty.ratio":"0.01",
+"segment.ms":"100",
+"delete.retention.ms":"100"
+}
