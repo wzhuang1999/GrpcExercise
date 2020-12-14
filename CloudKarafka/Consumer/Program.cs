@@ -19,7 +19,8 @@ namespace Consumer
                 SaslUsername = "<username>",
                 SaslPassword = "<password>",
                 GroupId = Guid.NewGuid().ToString(), // See lecture
-                AutoOffsetReset = AutoOffsetReset.Earliest
+                AutoOffsetReset = AutoOffsetReset.Earliest,
+                SslCaLocation = @"<put your path here>/ca-root.crt"
             };
 
             var cts = new CancellationTokenSource();

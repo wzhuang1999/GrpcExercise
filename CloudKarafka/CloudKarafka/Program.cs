@@ -19,7 +19,8 @@ namespace CloudKarafka
                 SecurityProtocol = SecurityProtocol.SaslSsl,
                 SaslMechanism = SaslMechanism.ScramSha256,
                 SaslUsername = "<username>",
-                SaslPassword = "<password>"
+                SaslPassword = "<password>",
+                SslCaLocation = @"<put your path here>/ca-root.crt"
             };
 
             var list = new List<Person>();
@@ -50,7 +51,7 @@ namespace CloudKarafka
                 // Simulate changes
                 while (cts.IsCancellationRequested == false)
                 {
-                    // REQ-03: Get a random person (1,2,3). Inncrease the Version of Fullname and Email by one. Publish the result (use DeliveryHandler)
+                    // REQ-03: Get a random person (1,2,3). Increase the Version of Fullname and Email by one. Publish the result (use DeliveryHandler)
 
                     // REQ-03 end                              
 
