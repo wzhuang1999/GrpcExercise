@@ -1,0 +1,104 @@
+[
+  {
+    "full_name": "Tatum Farley",
+    "email": "tempor@sed.net",
+    "address": {
+      "street": "3781 Laoreet Rd.",
+      "city": "Dosquebradas",
+      "postal": "05807"
+    },
+    "hobbies": [
+      {
+        "id": 1,
+        "name": "Cooking"
+      },
+      {
+        "id": 2,
+        "name": "Cryptography"
+      }
+    ]
+  },
+  {
+    "full_name": "Dai Rodriguez",
+    "email": "tincidunt.neque.vitae@Suspendisse.com",
+    "address": {
+      "street": "Ap #452-4031 Integer Road",
+      "city": "Bekasi",
+      "postal": "1618"
+    },
+    "hobbies": [
+      {
+        "id": 3,
+        "name": "Read books"
+      },
+      {
+        "id": 4,
+        "name": "Translate"
+      }
+    ]
+  },
+  {
+    "full_name": "Forrest Wiley",
+    "email": "Donec.vitae.erat@vulputate.ca",
+    "address": {
+      "street": "678-1232 Sociis Street",
+      "city": "Aligarh",
+      "postal": "Z4757"
+    },
+    "hobbies": [
+      {
+        "id": 5,
+        "name": "Listen music"
+      },
+      {
+        "id": 4,
+        "name": "Translate"
+      }
+    ]
+  },
+  {
+    "full_name": "Knox Velez",
+    "email": "Integer.urna.Vivamus@fringillacursus.co.uk",
+    "address": {
+      "street": "Ap #692-7462 Sapien. Rd.",
+      "city": "Rimbey",
+      "postal": "269930"
+    },
+    "hobbies": [
+      {
+        "id": 2,
+        "name": "Cryptography"
+      }
+    ]
+  },
+  {
+    "full_name": "Bradley Larson",
+    "email": "mollis@eu.net",
+    "address": {
+      "street": "P.O. Box 372, 8731 Nunc, Rd.",
+      "city": "Kilmarnock",
+      "postal": "51713"
+    },
+    "hobbies": [
+      {
+        "id": 5,
+        "name": "Listen music"
+      }
+    ]
+  },
+  {
+    "full_name": "Reece Rocha",
+    "email": "non@lacusvestibulum.org",
+    "address": {
+      "street": "1109 Dolor Road",
+      "city": "Ahmedabad",
+      "postal": "515650"
+    },
+    "hobbies": [
+      {
+        "id": 1,
+        "name": "Cooking"
+      }
+    ]
+  }
+]
