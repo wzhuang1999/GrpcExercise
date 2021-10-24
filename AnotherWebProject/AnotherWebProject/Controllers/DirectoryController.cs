@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AnotherWebProject.Models;
@@ -27,6 +28,28 @@ namespace AnotherWebProject.Controllers
             var uriToCreatedRessource = this.BuildResponseUri(new Uri($"/api/entries/{idOfCreatedPerson}", UriKind.Relative));
 
             return Created(uriToCreatedRessource, person);
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<Person>> Get()
+        {
+            var list = persistence.GetEntries();
+            Console.WriteLine($"list: {list.ToArray().Length}");
+            foreach (var person in list.ToArray())
+            {
+                Console.WriteLine("Firstname: " + person.Firstname);
+            }
+
+            //var uriToGetRessource = BuildResponseUri(new Uri($"/api/entries", UriKind.Relative));
+            //Created(uriToGetRessource, list.ToArray());
+            return persistence.GetEntries();
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public async Task<int> Delete(int id)
+        {
+            return await persistence.DeleteAsync(id);
         }
 
         private Uri BuildResponseUri(Uri path)

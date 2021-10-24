@@ -1,4 +1,7 @@
-﻿using AnotherWebProject.Persistence.Interfaces;
+﻿using System;
+using System.Linq;
+using AnotherWebProject.Controllers;
+using AnotherWebProject.Persistence.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +31,10 @@ namespace AnotherWebProject
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Directory API", Version = "1.0.0" });
             });
+            var persistence = new Persistence.Persistence();
+            var directory = new DirectoryController(persistence);
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

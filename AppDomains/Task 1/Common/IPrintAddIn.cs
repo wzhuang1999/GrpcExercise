@@ -1,7 +1,7 @@
 ﻿namespace Common
 {
-    public interface IPrint
+    public interface IPrintAddIn
     {
-        void PrintSalary(Salary salary);
+        string FormatSalary(Salary salary);
     }
 }

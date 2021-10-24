@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBillingAddIn.cs" />
+    <Compile Include="IPrintAddIn.cs" />
     <Compile Include="PersonId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salary.cs" />
