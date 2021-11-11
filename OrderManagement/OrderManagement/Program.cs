@@ -1,5 +1,6 @@
 ﻿using EasyNetQ;
 using EasyNetQ.Topology;
+using Entities;
 using System;
 using System.Text;
 
@@ -17,10 +18,14 @@ namespace OrderManagement
 
             bus.Consume(queue, (body, properties, info) =>
             {
+                // var @object = ProtoSerializer.Deserialize<Address>(body);
+
                 Console.WriteLine(Encoding.UTF8.GetString(body));
             });
 
             var properties = new MessageProperties();
+
+            //var stream = ProtoSerializer.Serialize(new Address());
 
             bus.Publish(new Exchange("Billing"), "US", false, properties, Encoding.UTF8.GetBytes("First Order!"));
 
