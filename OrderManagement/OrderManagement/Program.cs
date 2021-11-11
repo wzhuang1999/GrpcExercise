@@ -9,7 +9,7 @@ namespace OrderManagement
     {
         static void Main(string[] args)
         {
-            var bus = RabbitHutch.CreateBus("host=roedeer-01.rmq.cloudamqp.com;virtualHost=emkokpdx;username=emkokpdx;password=qQFQxJHPHCUYMfzLAtn4iAy_md5I5psR").Advanced;
+            var bus = RabbitHutch.CreateBus("host=localhost;username=admin;password=admin").Advanced;
           
             var exchange = bus.ExchangeDeclare("Billing", ExchangeType.Topic);
             var queue = bus.QueueDeclare("Billing.US", false, false, false);
