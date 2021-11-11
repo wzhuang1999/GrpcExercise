@@ -2,18 +2,26 @@
 
 package helloworld;
 
-// The greeting service definition.
-service Greeter {
-	// Sends a greeting
-	rpc SayHello (HelloRequest) returns (HelloReply) {}
+service OrderService {
+	rpc CreateOrder (CreateOrderRequest) returns (CreateOrderResponse) {}
+	rpc PriceChanges (NoParams) returns (stream Item){}
 }
 
-// The request message containing the user's name.
-message HelloRequest {
-	string name = 1;
+message CreateOrderRequest{
+	int32 UserId = 1;
+	repeated Item items = 2;
 }
 
-// The response message containing the greetings
-message HelloReply {
-	string message = 1;
+message CreateOrderResponse {
+	int32 Id = 1;
+	int32 ItemCount = 2;
+}
+
+message Item {
+	int32 Id = 1;
+	double Price = 2;
+}
+
+message NoParams {
+	
 }

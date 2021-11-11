@@ -5,12 +5,19 @@ using Helloworld;
 
 namespace Server
 {
-    class GreeterImpl : Greeter.GreeterBase
+    class OrderServiceImpl : OrderService.OrderServiceBase
     {
-        // Server side handler of the SayHello RPC
-        public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
+        public override Task<CreateOrderResponse> CreateOrder(CreateOrderRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new HelloReply { Message = "Hello " + request.Name });
+            return Task.FromResult(new CreateOrderResponse() { Id = 1 , ItemCount = request.Items.Count +1});
+        }
+
+        public override async Task PriceChanges(NoParams request, IServerStreamWriter<Item> responseStream, ServerCallContext context)
+        {
+            var rnd = new Random();
+            var rndNum = rnd.Next(1, 200);
+            var item = new Item(){ Id = 3, Price = rndNum};
+            await responseStream.WriteAsync(item);
         }
     }
 
@@ -22,11 +29,11 @@ namespace Server
         {
             Grpc.Core.Server server = new Grpc.Core.Server
             {
-                Services = { Greeter.BindService(new GreeterImpl()) },
+                Services = { OrderService.BindService(new OrderServiceImpl()) },
                 Ports = { new ServerPort("localhost", Port, ServerCredentials.Insecure) }
             };
             server.Start();
-
+            
             Console.WriteLine("Greeter server listening on port " + Port);
             Console.WriteLine("Press any key to stop the server...");
             Console.ReadKey();
